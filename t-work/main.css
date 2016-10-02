@@ -1,0 +1,199 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  body a, body a:hover, body a:focus {
+    color: transparent;
+    text-decoration: none;
+    cursor: pointer; }
+  body .center-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  body .navbar.navbar-black {
+    background-color: black; }
+  body .navbar a {
+    color: white; }
+  body .navbar .icon-bar {
+    background-color: yellow; }
+  @media (min-width: 768px) {
+    body .navbar .nav {
+      padding: 1em; }
+      body .navbar .nav > li + li:before {
+        content: " | ";
+        padding: 0 10px;
+        color: white; }
+      body .navbar .nav > li a {
+        padding-bottom: 5px;
+        display: inline; }
+        body .navbar .nav > li a.active {
+          border-bottom: 1px solid #FEC500; }
+        body .navbar .nav > li a:hover, body .navbar .nav > li a:focus {
+          background-color: transparent; } }
+  @media (max-width: 767px) {
+    body .navbar .nav {
+      margin: 0 -15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      body .navbar .nav > li a:hover, body .navbar .nav > li a:focus {
+        background-color: #FEC500;
+        opacity: 0.9; }
+      body .navbar .nav > li a.active {
+        background-color: #FEC500; } }
+  body .alert {
+    position: fixed;
+    z-index: 2000;
+    width: 100%; }
+  body main {
+    text-align: center; }
+    body main section {
+      position: relative; }
+      body main section .title {
+        font-size: 2.5em;
+        font-weight: bold;
+        padding: 0.3em 0; }
+    body main .home {
+      background-image: url(images/banner.jpg);
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+      height: 100vh; }
+      body main .home > div {
+        position: absolute;
+        width: 100%;
+        bottom: 20%;
+        color: white; }
+        body main .home > div .highlight {
+          color: #FEC500;
+          font-size: 3.75em;
+          font-weight: 100; }
+        body main .home > div i {
+          font-size: 2em; }
+        body main .home > div a.glyphicon.glyphicon-chevron-down {
+          font-size: 1.5em;
+          color: #FEC500;
+          top: 4em; }
+    body main .strength {
+      padding-top: 3em; }
+      body main .strength .strength-item {
+        padding: 2em;
+        background-color: #F5F2F2;
+        border-bottom: 2px solid #FEC500; }
+        body main .strength .strength-item .glyphicon {
+          font-size: 3.5em;
+          padding: 1em 0;
+          color: #FEC500; }
+        body main .strength .strength-item .sub-title {
+          font-size: 2em;
+          font-weight: bold;
+          text-align: left; }
+        body main .strength .strength-item .content {
+          padding: 2em 0em;
+          text-align: left; }
+      @media (max-width: 768px) {
+        body main .strength .strength-items {
+          background-color: #F5F2F2; }
+          body main .strength .strength-items .strength-item {
+            padding: 2em 0;
+            margin: 0 2em; } }
+      @media (min-width: 768px) {
+        body main .strength .strength-items {
+          display: inline-flex;
+          padding: 3em 0;
+          margin: 0 auto;
+          width: 66em; }
+          body main .strength .strength-items .strength-item {
+            flex: 1;
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+            padding: 2em 0; }
+          body main .strength .strength-items .sub-title {
+            text-align: center; }
+          body main .strength .strength-items .content {
+            text-align: center; } }
+    body main .client {
+      padding-top: 3em; }
+      body main .client .title {
+        background-color: #FEC500; }
+      body main .client .client-logos {
+        padding: 1em 2em; }
+        body main .client .client-logos > div {
+          padding: 1em; }
+          body main .client .client-logos > div > div {
+            height: 11em;
+            padding: 3em;
+            border: 1px solid lightgrey; }
+      body main .client .founder-content {
+        background-color: #FEC500; }
+        @media (max-width: 750px) {
+          body main .client .founder-content {
+            font-size: 0.75em; }
+            body main .client .founder-content .round-button {
+              height: 8em !important;
+              width: 8em !important; }
+            body main .client .founder-content .client-note::before {
+              left: 10px !important;
+              top: 5px !important;
+              font-size: 3em !important; } }
+        body main .client .founder-content .round-button {
+          height: 12em;
+          width: 12em;
+          border-radius: 50%;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-top: 2em; }
+          body main .client .founder-content .round-button:first-child {
+            background-size: 105%; }
+          body main .client .founder-content .round-button:hover, body main .client .founder-content .round-button:focus {
+            border: 4px solid white; }
+        body main .client .founder-content .active .round-button {
+          border: 4px solid white; }
+        body main .client .founder-content .active .client-name, body main .client .founder-content .active .client-designation {
+          display: block; }
+        body main .client .founder-content .client-name, body main .client .founder-content .client-designation {
+          display: none; }
+        body main .client .founder-content .client-name {
+          color: white;
+          font-size: 1.25em; }
+        body main .client .founder-content .client-designation {
+          font-weight: 600; }
+        body main .client .founder-content .client-note {
+          color: white;
+          padding: 2em;
+          text-align: left;
+          font-size: 1.25em; }
+          body main .client .founder-content .client-note::before {
+            content: "\201C";
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            font-size: 5em; }
+    body main .contact {
+      padding-top: 3em; }
+      body main .contact .container-contact {
+        background-color: #242833;
+        padding: 6em 4em;
+        color: #7E889B; }
+        body main .contact .container-contact .form-control {
+          height: 50px;
+          border-radius: 0;
+          border: 0; }
+          body main .contact .container-contact .form-control[type='submit'] {
+            background-color: #FEC500;
+            color: black; }
+        body main .contact .container-contact textarea.form-control {
+          padding-top: 14px; }
+        body main .contact .container-contact .contact-response-msg {
+          margin-top: 6em;
+          font-size: 2em; }
+          @media (max-width: 750px) {
+            body main .contact .container-contact .contact-response-msg {
+              margin-top: 2em;
+              font-size: 1.5em; } }
+          body main .contact .container-contact .contact-response-msg .fa-3x {
+            margin: 1em 0.2em 1em 0; }
+
+/*# sourceMappingURL=main.css.map */
